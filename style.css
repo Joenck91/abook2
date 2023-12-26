@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 14px;
+    margin-right: 14px;
+    max-width: 400px;
+    padding-bottom: 7px;
+}
+.logo {
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+}
+h1{
+    padding-bottom: 14px;
+    font-size: 32px;
+}
+h3{
+    padding-bottom: 20px;
+}
+.livro{
+    width: 250px;
+    padding-bottom: 10px;
+}
+.box-preco {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.de-por {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+s {
+    color: red;
+}
+.somente {
+    max-width: 250px;
+}
+.preco {
+    justify-content: center;    
+    font-size: 56px;
+}
+.box-botao {
+    margin-bottom: 20px;
+}
+.botao-comprar {
+    background-color: rgb(76, 216, 21);
+    width: 250px;
+    border: solid black 1px;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.comprar {
+    font-size: 26px;
+    text-decoration: none;
+    color: black;
+}
+.primeiro-paragrafo {
+    padding-bottom: 7px;
+    font-size: 1.15em;
+}
+.nove-e-vinte-nove {
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 7px; 
+    margin-bottom: 7px;   
+}
+.segundo-paragrafo{
+    font-size: 1.15em;
+    margin-bottom: 50px;
+}
+.segundo-titulo {
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+.terceiro-paragrafo {
+    padding-bottom: 20px;
+}
+.box-galeria {
+    position: relative;
+    display: flex;
+    width: 450px;
+    min-height: 63vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.galeria {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:350px;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.on {
+    opacity: 1;
+}
+#esquerda, #direita {
+    margin: 10px;
+    display:inline-flex;
+    background-color:transparent;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+#esquerda img, #direita img {
+    justify-content: right;
+    width: 100%;
+    height: 100%;
+}
+#esquerda {
+    transform:rotate(180deg) ;
+}
