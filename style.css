@@ -19,7 +19,7 @@ body{
     text-align: center;
     margin-left: 14px;
     margin-right: 14px;
-    max-width: 400px;
+    max-width: 340px;
     padding-bottom: 7px;
 }
 .logo {
@@ -76,34 +76,39 @@ s {
     color: black;
 }
 .primeiro-paragrafo {
-    padding-bottom: 7px;
+    padding-bottom: 10px;
     font-size: 1.15em;
 }
-.nove-e-vinte-nove {
-    width: 250px;
+#nove-e-vinte-nove {
+    width: 300px;
     border: 2px solid black;
     border-radius: 7px; 
     margin-bottom: 7px;   
+}
+.segunda-parte img {
+    width: 100%;
 }
 .segundo-paragrafo{
     font-size: 1.15em;
     margin-bottom: 50px;
 }
 .segundo-titulo {
-    font-size: 26px;
-    padding-bottom: 20px;
+    
+    padding-bottom: 50px;
 }
 .terceiro-paragrafo {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 .box-galeria {
     position: relative;
     display: flex;
-    width: 450px;
-    min-height: 63vh;
+    width: 370px;
+    height: 500px;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    padding-bottom: 30px;
+
 }
 .galeria {
     position: relative;
@@ -127,16 +132,99 @@ s {
     margin: 10px;
     display:inline-flex;
     background-color:transparent;
-    width: 30px;
-    height: 30px;
+    width: 10px;
+    height: 20px;
     border: none;
     cursor: pointer;
 }
-#esquerda img, #direita img {
+#esquerda video, #direita video {
     justify-content: right;
     width: 100%;
     height: 100%;
 }
 #esquerda {
     transform:rotate(180deg) ;
+}
+.box-cta-final {
+    padding-bottom: 20px;
+}
+.rodape {
+    margin-bottom: 20px;
+    font-size: 11px;
+    background-color: aliceblue;
+    background-color: transparent;
+
+    
+}
+
+/*tables*/
+@media screen and (min-width: 762px) {
+    .head{
+        min-width: 750px;
+    }
+    #nove-e-vinte-nove {
+        width: 550px;
+        margin-bottom: 25px;
+    }
+    .box-cta-final {
+        padding-bottom: 40px;
+    }
+    .primeiro-paragrafo {
+        padding-bottom: 20px;
+    }
+
+}
+/*telas*/
+@media screen  and ( min-width:1024px ) {
+    body {
+        font-size: 1.65em;
+    }
+    .head {
+        min-width: 990px;
+        /*background-color: aqua;*/
+    }
+    .logo {
+        width: 180px;
+    }
+    h1 {
+        font-size: 52px;
+        padding-bottom: 28px;
+    }
+    h3 {
+        font-size: 32px;
+        padding-bottom: 40px;
+    }
+    .livro {
+        width: 450px;
+        padding-bottom: 40px;
+    }
+    .primeiro-paragrafo {
+        padding-bottom: 30px;
+    }
+    .somente {
+        max-width: 350px;
+        font-size: 26px;
+    }
+    .preco {
+        font-size: 96px;
+    }
+    .box-botao {
+        display: flex;
+        justify-content: center;
+        width: 450px;
+        margin-bottom: 40px;
+    }
+    .botao-comprar{
+        width: min-content;
+    }
+    .comprar {
+        font-size: 42px;
+        display: flex;
+        align-items: center;
+        padding: 5px 50px;
+    }
+    .box-galeria {
+        width: 500px;
+        height: 625px;
+    }
 }
