@@ -19,7 +19,7 @@ body{
     text-align: center;
     margin-left: 14px;
     margin-right: 14px;
-    max-width: 340px;
+    max-width: 320px;
     padding-bottom: 7px;
 }
 .logo {
@@ -115,12 +115,12 @@ s {
     display: flex;
     align-items: center;
     justify-content: center;
-    width:350px;
+    width:290px;
 }
 
 .slider {
     position: absolute;
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     opacity: 0;
 }
@@ -129,7 +129,7 @@ s {
     opacity: 1;
 }
 #esquerda, #direita {
-    margin: 10px;
+ 
     display:flex;
     align-items: center;
     background-color:transparent;
@@ -151,6 +151,7 @@ s {
 }
 .box-cta-final {
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 .rodape {
     margin-bottom: 20px;
@@ -181,10 +182,10 @@ s {
 /*telas*/
 @media screen  and ( min-width:1024px ) {
     body {
-        font-size: 1.65em;
+        font-size: 1.25em;
     }
     .head {
-        min-width: 990px;
+        min-width: 900px;
         /*background-color: aqua;*/
     }
     .logo {
@@ -204,6 +205,15 @@ s {
     }
     .primeiro-paragrafo {
         padding-bottom: 30px;
+    }
+    .imgladobotao {
+        display: flex;
+    }
+    .precoebotao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .somente {
         max-width: 350px;
@@ -231,4 +241,5 @@ s {
         width: 500px;
         height: 625px;
     }
+
 }
